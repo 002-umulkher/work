@@ -9,7 +9,8 @@
 
 /* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; 
+    overflow-x: hidden; }
 body {
     background-color: var(--bg);
     color: var(--text);
@@ -49,7 +50,13 @@ h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 4.5re
 }
 
 /* SKILLS (Rose Glow) */
-.section-label { color: var(--accent); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 30px; }
+.section-label-skills { color: var(--accent); 
+    text-transform: capitalize; 
+    font-size: 1rem; 
+    letter-spacing: 2px;
+     margin-bottom: 30px; 
+    font-family: 'playfair display',serif;
+}
 .skill-slot { margin-bottom: 25px; }
 .skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem; }
 .bar-bg { background: #1a1a1a; height: 6px; border-radius: 10px; overflow: hidden; }
@@ -59,7 +66,17 @@ h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 4.5re
 }
 
 /* PROJECTS */
-.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.section-label-project { color: var(--accent); 
+    text-transform: capitalize; 
+    font-size: 1.5rem; 
+    letter-spacing: 2px;
+     margin-bottom: 30px; 
+    margin-top: 60px;
+font-family: 'Times New Roman', Times, serif;}
+
+.project-grid { display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px; }
 .project-card { 
     background: var(--card); padding: 40px; border: 1px solid rgba(226, 180, 189, 0.05); 
     transition: 0.4s ease;
